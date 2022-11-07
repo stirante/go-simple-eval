@@ -1,11 +1,12 @@
 package eval
 
 import (
+	"github.com/Bedrock-OSS/go-burrito/burrito"
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 	"github.com/gammazero/deque"
-	"github.com/stirante/go-simple-query-language/eval/functions"
-	"github.com/stirante/go-simple-query-language/eval/utils"
-	"github.com/stirante/go-simple-query-language/parser"
+	"github.com/stirante/go-simple-eval/eval/functions"
+	"github.com/stirante/go-simple-eval/eval/utils"
+	"github.com/stirante/go-simple-eval/parser"
 )
 
 // CollectingErrorListener is an error listener that collects all errors by appending them to the Error field
@@ -15,7 +16,7 @@ type CollectingErrorListener struct {
 }
 
 func (l *CollectingErrorListener) SyntaxError(recognizer antlr.Recognizer, offendingSymbol interface{}, line, column int, msg string, e antlr.RecognitionException) {
-	l.Error = utils.WrapErrorf(l.Error, "column: %d %s", column, msg)
+	l.Error = burrito.WrapErrorf(l.Error, "column: %d %s", column, msg)
 }
 
 // Eval evaluates the given expression and returns the result
@@ -32,7 +33,7 @@ func Eval(text string, scope map[string]interface{}) (interface{}, error) {
 	p.BuildParseTrees = true
 	tree := p.Expression()
 	if listener.Error != nil {
-		return nil, utils.WrapErrorf(listener.Error, "Failed to parse expression %s", text)
+		return nil, burrito.WrapErrorf(listener.Error, "Failed to parse expression %s", text)
 	}
 	s := deque.Deque[interface{}]{}
 	s.PushBack(scope)

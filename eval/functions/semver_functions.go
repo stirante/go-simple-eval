@@ -1,7 +1,7 @@
 package functions
 
 import (
-	"github.com/stirante/go-simple-query-language/eval/utils"
+	"github.com/stirante/go-simple-eval/eval/utils"
 )
 
 func RegisterSemverFunctions() {

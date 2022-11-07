@@ -3,15 +3,13 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/stirante/go-simple-query-language/eval"
-	"github.com/stirante/go-simple-query-language/eval/utils"
-	"go.uber.org/zap"
+	"github.com/stirante/go-simple-eval/eval"
+	"github.com/stirante/go-simple-eval/eval/utils"
 	"os"
 	"strings"
 )
 
 func main() {
-	utils.InitLogging(zap.DebugLevel)
 	eval.Init()
 	repl(map[string]interface{}{
 		"version": utils.Semver{Major: 1, Minor: 17},

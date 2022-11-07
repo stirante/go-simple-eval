@@ -1,7 +1,8 @@
 package functions
 
 import (
-	"github.com/stirante/go-simple-query-language/eval/utils"
+	"github.com/Bedrock-OSS/go-burrito/burrito"
+	"github.com/stirante/go-simple-eval/eval/utils"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 	"regexp"
@@ -146,7 +147,7 @@ func endsWith(str, substr string) bool {
 func regexReplace(str, pattern, repl string) (string, error) {
 	compile, err := regexp.Compile(pattern)
 	if err != nil {
-		return "", utils.WrapErrorf(err, "Failed to compile regex pattern")
+		return "", burrito.WrapErrorf(err, "Failed to compile regex pattern")
 	}
 	return compile.ReplaceAllString(str, repl), nil
 }

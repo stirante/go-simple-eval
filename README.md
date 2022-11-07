@@ -1,6 +1,6 @@
-# go-simple-query-language
+# go-simple-eval
 
-go-simple-query-language is a simple query language for running predicates. 
+Simple query language for running predicates. 
 It has a simple syntax and is easy to use. It also contains a small set of built-in functions.
 
 ## Installation
