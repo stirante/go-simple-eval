@@ -5,7 +5,7 @@ It has a simple syntax and is easy to use. It also contains a small set of built
 
 ## Installation
 
-```powershell
+```shell
 go get -u github.com/stirante/go-simple-query-language
 ```
 

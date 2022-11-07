@@ -44,7 +44,7 @@ func Eval(text string, scope map[string]interface{}) (interface{}, error) {
 	if isError(r) {
 		err = getError(r)
 	}
-	return r, err
+	return utils.UnwrapContainers(r), err
 }
 
 func Init() {
