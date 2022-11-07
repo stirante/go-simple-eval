@@ -1,7 +1,7 @@
 package functions
 
 import (
-	"github.com/stirante/go-simple-query-language/query/utils"
+	"github.com/stirante/go-simple-query-language/eval/utils"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 	"regexp"

@@ -1,11 +1,11 @@
-package query
+package eval
 
 import (
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 	"github.com/gammazero/deque"
+	"github.com/stirante/go-simple-query-language/eval/functions"
+	"github.com/stirante/go-simple-query-language/eval/utils"
 	"github.com/stirante/go-simple-query-language/parser"
-	"github.com/stirante/go-simple-query-language/query/functions"
-	"github.com/stirante/go-simple-query-language/query/utils"
 	"reflect"
 )
 

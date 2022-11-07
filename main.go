@@ -3,8 +3,8 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/stirante/go-simple-query-language/query"
-	"github.com/stirante/go-simple-query-language/query/utils"
+	"github.com/stirante/go-simple-query-language/eval"
+	"github.com/stirante/go-simple-query-language/eval/utils"
 	"go.uber.org/zap"
 	"os"
 	"strings"
@@ -12,7 +12,7 @@ import (
 
 func main() {
 	utils.InitLogging(zap.DebugLevel)
-	query.Init()
+	eval.Init()
 	repl(map[string]interface{}{
 		"version": utils.Semver{Major: 1, Minor: 17},
 	})
@@ -27,7 +27,7 @@ func repl(scope map[string]interface{}) {
 		if text == "exit" {
 			break
 		}
-		eval, err := query.Eval(text, scope)
+		eval, err := eval.Eval(text, scope)
 		if err != nil {
 			fmt.Println(err)
 		} else {

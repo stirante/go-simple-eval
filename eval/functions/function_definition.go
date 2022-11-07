@@ -2,7 +2,7 @@ package functions
 
 import (
 	"fmt"
-	"github.com/stirante/go-simple-query-language/query/utils"
+	"github.com/stirante/go-simple-query-language/eval/utils"
 	"reflect"
 	"strings"
 )

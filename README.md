@@ -6,13 +6,13 @@ It has a simple syntax and is easy to use. It also contains a small set of built
 ## Installation
 
 ```shell
-go get -u github.com/stirante/go-simple-query-language
+go get -u github.com/stirante/go-simple-eval
 ```
 
 ## Usage
 
 ```go
-query.Eval("test > 2", map[string]interface{}{
+eval.Eval("test > 2", map[string]interface{}{
 	"test": 10,
 })
 ```
@@ -27,8 +27,8 @@ query.Eval("test > 2", map[string]interface{}{
 
 ```powershell
 # Clone the repository
-git clone https://github.com/stirante/go-simple-query-language
-cd go-simple-query-language
+git clone https://github.com/stirante/go-simple-eval
+cd go-simple-eval
 # Install dependencies
 go mod vendor
 cd scripts
@@ -43,7 +43,7 @@ cd ..
 ### Building
 
 ```powershell
-go build github.com/stirante/go-simple-query-language
+go build github.com/stirante/go-simple-eval
 ```
 
 ### Notes
