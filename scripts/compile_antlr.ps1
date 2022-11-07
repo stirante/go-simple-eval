@@ -1,0 +1,1 @@
+antlr -Dlanguage=Go -o ../parser ../grammar/SimpleQueryLanguage.g4 -visitor

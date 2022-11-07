@@ -1,0 +1,7 @@
+/dist/
+/vendor/
+/bin/
+*.exe
+packs
+docs/
+/wasm
