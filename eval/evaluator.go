@@ -2,7 +2,7 @@ package eval
 
 import (
 	"github.com/Bedrock-OSS/go-burrito/burrito"
-	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/antlr/antlr4/runtime/Go/antlr/v4"
 	"github.com/gammazero/deque"
 	"github.com/stirante/go-simple-eval/eval/functions"
 	"github.com/stirante/go-simple-eval/eval/utils"

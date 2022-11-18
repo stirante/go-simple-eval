@@ -1,4 +1,4 @@
-// Code generated from ../grammar/SimpleQueryLanguage.g4 by ANTLR 4.10.1. DO NOT EDIT.
+// Code generated from java-escape by ANTLR 4.11.1. DO NOT EDIT.
 
 package parser // SimpleQueryLanguage
 
@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/antlr/antlr4/runtime/Go/antlr/v4"
 )
 
 // Suppress unused import errors
@@ -33,15 +33,15 @@ var simplequerylanguageParserStaticData struct {
 func simplequerylanguageParserInit() {
 	staticData := &simplequerylanguageParserStaticData
 	staticData.literalNames = []string{
-		"", "'.'", "':'", "'<'", "'<='", "'=='", "'>'", "'>='", "'!='", "'&&'",
-		"'||'", "'!'", "'+'", "'-'", "'*'", "'/'", "'('", "')'", "'['", "']'",
-		"'?'", "'??'", "'..'", "','", "'{'", "'}'", "'null'", "'false'", "'true'",
+		"", "':'", "'<'", "'<='", "'=='", "'>'", "'>='", "'!='", "'&&'", "'||'",
+		"'!'", "'+'", "'-'", "'*'", "'/'", "'('", "')'", "'['", "']'", "'?'",
+		"'??'", "'.'", "','", "'{'", "'}'", "'null'", "'false'", "'true'",
 	}
 	staticData.symbolicNames = []string{
-		"", "", "", "Less", "LessOrEqual", "Equal", "Greater", "GreaterOrEqual",
+		"", "", "Less", "LessOrEqual", "Equal", "Greater", "GreaterOrEqual",
 		"NotEqual", "And", "Or", "Not", "Add", "Subtract", "Multiply", "Divide",
 		"LeftParen", "RightParen", "LeftBracket", "RightBracket", "Question",
-		"NullCoalescing", "Range", "Comma", "LeftBrace", "RightBrace", "Null",
+		"NullCoalescing", "Dot", "Comma", "LeftBrace", "RightBrace", "Null",
 		"False", "True", "ESCAPED_STRING", "STRING", "NUMBER", "WS",
 	}
 	staticData.ruleNames = []string{
@@ -50,77 +50,78 @@ func simplequerylanguageParserInit() {
 	}
 	staticData.predictionContextCache = antlr.NewPredictionContextCache()
 	staticData.serializedATN = []int32{
-		4, 1, 32, 157, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
+		4, 1, 31, 158, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 2, 3, 7, 3, 2, 4, 7,
 		4, 2, 5, 7, 5, 2, 6, 7, 6, 2, 7, 7, 7, 1, 0, 1, 0, 1, 1, 1, 1, 1, 2, 1,
 		2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1,
 		2, 1, 2, 1, 2, 1, 2, 3, 2, 38, 8, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
 		1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
 		1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
-		1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 78, 8, 2, 1, 2, 1,
-		2, 1, 2, 1, 2, 3, 2, 84, 8, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
-		1, 2, 1, 2, 5, 2, 95, 8, 2, 10, 2, 12, 2, 98, 9, 2, 3, 2, 100, 8, 2, 1,
-		2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 108, 8, 2, 5, 2, 110, 8, 2, 10,
-		2, 12, 2, 113, 9, 2, 1, 3, 1, 3, 1, 3, 1, 3, 5, 3, 119, 8, 3, 10, 3, 12,
-		3, 122, 9, 3, 3, 3, 124, 8, 3, 1, 3, 1, 3, 1, 4, 1, 4, 1, 4, 1, 4, 5, 4,
-		132, 8, 4, 10, 4, 12, 4, 135, 9, 4, 3, 4, 137, 8, 4, 1, 4, 1, 4, 1, 5,
-		1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 3, 5, 148, 8, 5, 1, 6, 1, 6, 1, 7,
-		1, 7, 1, 7, 3, 7, 155, 8, 7, 1, 7, 0, 1, 4, 8, 0, 2, 4, 6, 8, 10, 12, 14,
-		0, 2, 1, 0, 14, 15, 1, 0, 12, 13, 186, 0, 16, 1, 0, 0, 0, 2, 18, 1, 0,
-		0, 0, 4, 37, 1, 0, 0, 0, 6, 114, 1, 0, 0, 0, 8, 127, 1, 0, 0, 0, 10, 147,
-		1, 0, 0, 0, 12, 149, 1, 0, 0, 0, 14, 154, 1, 0, 0, 0, 16, 17, 3, 4, 2,
-		0, 17, 1, 1, 0, 0, 0, 18, 19, 3, 4, 2, 0, 19, 3, 1, 0, 0, 0, 20, 21, 6,
-		2, -1, 0, 21, 22, 5, 16, 0, 0, 22, 23, 3, 4, 2, 0, 23, 24, 5, 17, 0, 0,
-		24, 38, 1, 0, 0, 0, 25, 38, 5, 28, 0, 0, 26, 38, 5, 27, 0, 0, 27, 38, 5,
-		26, 0, 0, 28, 38, 5, 31, 0, 0, 29, 38, 5, 29, 0, 0, 30, 38, 3, 6, 3, 0,
-		31, 38, 3, 8, 4, 0, 32, 38, 3, 12, 6, 0, 33, 34, 5, 13, 0, 0, 34, 38, 3,
-		4, 2, 15, 35, 36, 5, 11, 0, 0, 36, 38, 3, 4, 2, 2, 37, 20, 1, 0, 0, 0,
-		37, 25, 1, 0, 0, 0, 37, 26, 1, 0, 0, 0, 37, 27, 1, 0, 0, 0, 37, 28, 1,
-		0, 0, 0, 37, 29, 1, 0, 0, 0, 37, 30, 1, 0, 0, 0, 37, 31, 1, 0, 0, 0, 37,
-		32, 1, 0, 0, 0, 37, 33, 1, 0, 0, 0, 37, 35, 1, 0, 0, 0, 38, 111, 1, 0,
-		0, 0, 39, 40, 10, 14, 0, 0, 40, 41, 7, 0, 0, 0, 41, 110, 3, 4, 2, 15, 42,
-		43, 10, 13, 0, 0, 43, 44, 7, 1, 0, 0, 44, 110, 3, 4, 2, 14, 45, 46, 10,
-		12, 0, 0, 46, 47, 5, 22, 0, 0, 47, 110, 3, 4, 2, 13, 48, 49, 10, 11, 0,
-		0, 49, 50, 5, 21, 0, 0, 50, 110, 3, 4, 2, 12, 51, 52, 10, 10, 0, 0, 52,
-		53, 5, 5, 0, 0, 53, 110, 3, 4, 2, 11, 54, 55, 10, 9, 0, 0, 55, 56, 5, 3,
-		0, 0, 56, 110, 3, 4, 2, 10, 57, 58, 10, 8, 0, 0, 58, 59, 5, 4, 0, 0, 59,
-		110, 3, 4, 2, 9, 60, 61, 10, 7, 0, 0, 61, 62, 5, 6, 0, 0, 62, 110, 3, 4,
-		2, 8, 63, 64, 10, 6, 0, 0, 64, 65, 5, 7, 0, 0, 65, 110, 3, 4, 2, 7, 66,
-		67, 10, 5, 0, 0, 67, 68, 5, 8, 0, 0, 68, 110, 3, 4, 2, 6, 69, 70, 10, 4,
-		0, 0, 70, 71, 5, 9, 0, 0, 71, 110, 3, 4, 2, 5, 72, 73, 10, 3, 0, 0, 73,
-		74, 5, 10, 0, 0, 74, 110, 3, 4, 2, 4, 75, 77, 10, 18, 0, 0, 76, 78, 5,
-		20, 0, 0, 77, 76, 1, 0, 0, 0, 77, 78, 1, 0, 0, 0, 78, 79, 1, 0, 0, 0, 79,
-		80, 5, 1, 0, 0, 80, 110, 3, 12, 6, 0, 81, 83, 10, 17, 0, 0, 82, 84, 5,
-		20, 0, 0, 83, 82, 1, 0, 0, 0, 83, 84, 1, 0, 0, 0, 84, 85, 1, 0, 0, 0, 85,
-		86, 5, 18, 0, 0, 86, 87, 3, 14, 7, 0, 87, 88, 5, 19, 0, 0, 88, 110, 1,
-		0, 0, 0, 89, 90, 10, 16, 0, 0, 90, 99, 5, 16, 0, 0, 91, 96, 3, 2, 1, 0,
-		92, 93, 5, 23, 0, 0, 93, 95, 3, 2, 1, 0, 94, 92, 1, 0, 0, 0, 95, 98, 1,
-		0, 0, 0, 96, 94, 1, 0, 0, 0, 96, 97, 1, 0, 0, 0, 97, 100, 1, 0, 0, 0, 98,
-		96, 1, 0, 0, 0, 99, 91, 1, 0, 0, 0, 99, 100, 1, 0, 0, 0, 100, 101, 1, 0,
-		0, 0, 101, 110, 5, 17, 0, 0, 102, 103, 10, 1, 0, 0, 103, 104, 5, 20, 0,
-		0, 104, 107, 3, 4, 2, 0, 105, 106, 5, 2, 0, 0, 106, 108, 3, 4, 2, 0, 107,
-		105, 1, 0, 0, 0, 107, 108, 1, 0, 0, 0, 108, 110, 1, 0, 0, 0, 109, 39, 1,
-		0, 0, 0, 109, 42, 1, 0, 0, 0, 109, 45, 1, 0, 0, 0, 109, 48, 1, 0, 0, 0,
-		109, 51, 1, 0, 0, 0, 109, 54, 1, 0, 0, 0, 109, 57, 1, 0, 0, 0, 109, 60,
-		1, 0, 0, 0, 109, 63, 1, 0, 0, 0, 109, 66, 1, 0, 0, 0, 109, 69, 1, 0, 0,
-		0, 109, 72, 1, 0, 0, 0, 109, 75, 1, 0, 0, 0, 109, 81, 1, 0, 0, 0, 109,
-		89, 1, 0, 0, 0, 109, 102, 1, 0, 0, 0, 110, 113, 1, 0, 0, 0, 111, 109, 1,
-		0, 0, 0, 111, 112, 1, 0, 0, 0, 112, 5, 1, 0, 0, 0, 113, 111, 1, 0, 0, 0,
-		114, 123, 5, 18, 0, 0, 115, 120, 3, 4, 2, 0, 116, 117, 5, 23, 0, 0, 117,
-		119, 3, 4, 2, 0, 118, 116, 1, 0, 0, 0, 119, 122, 1, 0, 0, 0, 120, 118,
-		1, 0, 0, 0, 120, 121, 1, 0, 0, 0, 121, 124, 1, 0, 0, 0, 122, 120, 1, 0,
-		0, 0, 123, 115, 1, 0, 0, 0, 123, 124, 1, 0, 0, 0, 124, 125, 1, 0, 0, 0,
-		125, 126, 5, 19, 0, 0, 126, 7, 1, 0, 0, 0, 127, 136, 5, 24, 0, 0, 128,
-		133, 3, 10, 5, 0, 129, 130, 5, 23, 0, 0, 130, 132, 3, 10, 5, 0, 131, 129,
-		1, 0, 0, 0, 132, 135, 1, 0, 0, 0, 133, 131, 1, 0, 0, 0, 133, 134, 1, 0,
-		0, 0, 134, 137, 1, 0, 0, 0, 135, 133, 1, 0, 0, 0, 136, 128, 1, 0, 0, 0,
-		136, 137, 1, 0, 0, 0, 137, 138, 1, 0, 0, 0, 138, 139, 5, 25, 0, 0, 139,
-		9, 1, 0, 0, 0, 140, 141, 3, 12, 6, 0, 141, 142, 5, 2, 0, 0, 142, 143, 3,
-		4, 2, 0, 143, 148, 1, 0, 0, 0, 144, 145, 5, 29, 0, 0, 145, 146, 5, 2, 0,
-		0, 146, 148, 3, 4, 2, 0, 147, 140, 1, 0, 0, 0, 147, 144, 1, 0, 0, 0, 148,
-		11, 1, 0, 0, 0, 149, 150, 5, 30, 0, 0, 150, 13, 1, 0, 0, 0, 151, 155, 3,
-		4, 2, 0, 152, 155, 5, 31, 0, 0, 153, 155, 5, 29, 0, 0, 154, 151, 1, 0,
-		0, 0, 154, 152, 1, 0, 0, 0, 154, 153, 1, 0, 0, 0, 155, 15, 1, 0, 0, 0,
-		14, 37, 77, 83, 96, 99, 107, 109, 111, 120, 123, 133, 136, 147, 154,
+		1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 79, 8, 2, 1,
+		2, 1, 2, 1, 2, 1, 2, 3, 2, 85, 8, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2,
+		1, 2, 1, 2, 1, 2, 5, 2, 96, 8, 2, 10, 2, 12, 2, 99, 9, 2, 3, 2, 101, 8,
+		2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 3, 2, 109, 8, 2, 5, 2, 111, 8, 2,
+		10, 2, 12, 2, 114, 9, 2, 1, 3, 1, 3, 1, 3, 1, 3, 5, 3, 120, 8, 3, 10, 3,
+		12, 3, 123, 9, 3, 3, 3, 125, 8, 3, 1, 3, 1, 3, 1, 4, 1, 4, 1, 4, 1, 4,
+		5, 4, 133, 8, 4, 10, 4, 12, 4, 136, 9, 4, 3, 4, 138, 8, 4, 1, 4, 1, 4,
+		1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 1, 5, 3, 5, 149, 8, 5, 1, 6, 1, 6,
+		1, 7, 1, 7, 1, 7, 3, 7, 156, 8, 7, 1, 7, 0, 1, 4, 8, 0, 2, 4, 6, 8, 10,
+		12, 14, 0, 2, 1, 0, 13, 14, 1, 0, 11, 12, 187, 0, 16, 1, 0, 0, 0, 2, 18,
+		1, 0, 0, 0, 4, 37, 1, 0, 0, 0, 6, 115, 1, 0, 0, 0, 8, 128, 1, 0, 0, 0,
+		10, 148, 1, 0, 0, 0, 12, 150, 1, 0, 0, 0, 14, 155, 1, 0, 0, 0, 16, 17,
+		3, 4, 2, 0, 17, 1, 1, 0, 0, 0, 18, 19, 3, 4, 2, 0, 19, 3, 1, 0, 0, 0, 20,
+		21, 6, 2, -1, 0, 21, 22, 5, 15, 0, 0, 22, 23, 3, 4, 2, 0, 23, 24, 5, 16,
+		0, 0, 24, 38, 1, 0, 0, 0, 25, 38, 5, 27, 0, 0, 26, 38, 5, 26, 0, 0, 27,
+		38, 5, 25, 0, 0, 28, 38, 5, 30, 0, 0, 29, 38, 5, 28, 0, 0, 30, 38, 3, 6,
+		3, 0, 31, 38, 3, 8, 4, 0, 32, 38, 3, 12, 6, 0, 33, 34, 5, 12, 0, 0, 34,
+		38, 3, 4, 2, 15, 35, 36, 5, 10, 0, 0, 36, 38, 3, 4, 2, 2, 37, 20, 1, 0,
+		0, 0, 37, 25, 1, 0, 0, 0, 37, 26, 1, 0, 0, 0, 37, 27, 1, 0, 0, 0, 37, 28,
+		1, 0, 0, 0, 37, 29, 1, 0, 0, 0, 37, 30, 1, 0, 0, 0, 37, 31, 1, 0, 0, 0,
+		37, 32, 1, 0, 0, 0, 37, 33, 1, 0, 0, 0, 37, 35, 1, 0, 0, 0, 38, 112, 1,
+		0, 0, 0, 39, 40, 10, 14, 0, 0, 40, 41, 7, 0, 0, 0, 41, 111, 3, 4, 2, 15,
+		42, 43, 10, 13, 0, 0, 43, 44, 7, 1, 0, 0, 44, 111, 3, 4, 2, 14, 45, 46,
+		10, 12, 0, 0, 46, 47, 5, 21, 0, 0, 47, 48, 5, 21, 0, 0, 48, 111, 3, 4,
+		2, 13, 49, 50, 10, 11, 0, 0, 50, 51, 5, 20, 0, 0, 51, 111, 3, 4, 2, 12,
+		52, 53, 10, 10, 0, 0, 53, 54, 5, 4, 0, 0, 54, 111, 3, 4, 2, 11, 55, 56,
+		10, 9, 0, 0, 56, 57, 5, 2, 0, 0, 57, 111, 3, 4, 2, 10, 58, 59, 10, 8, 0,
+		0, 59, 60, 5, 3, 0, 0, 60, 111, 3, 4, 2, 9, 61, 62, 10, 7, 0, 0, 62, 63,
+		5, 5, 0, 0, 63, 111, 3, 4, 2, 8, 64, 65, 10, 6, 0, 0, 65, 66, 5, 6, 0,
+		0, 66, 111, 3, 4, 2, 7, 67, 68, 10, 5, 0, 0, 68, 69, 5, 7, 0, 0, 69, 111,
+		3, 4, 2, 6, 70, 71, 10, 4, 0, 0, 71, 72, 5, 8, 0, 0, 72, 111, 3, 4, 2,
+		5, 73, 74, 10, 3, 0, 0, 74, 75, 5, 9, 0, 0, 75, 111, 3, 4, 2, 4, 76, 78,
+		10, 18, 0, 0, 77, 79, 5, 19, 0, 0, 78, 77, 1, 0, 0, 0, 78, 79, 1, 0, 0,
+		0, 79, 80, 1, 0, 0, 0, 80, 81, 5, 21, 0, 0, 81, 111, 3, 12, 6, 0, 82, 84,
+		10, 17, 0, 0, 83, 85, 5, 19, 0, 0, 84, 83, 1, 0, 0, 0, 84, 85, 1, 0, 0,
+		0, 85, 86, 1, 0, 0, 0, 86, 87, 5, 17, 0, 0, 87, 88, 3, 14, 7, 0, 88, 89,
+		5, 18, 0, 0, 89, 111, 1, 0, 0, 0, 90, 91, 10, 16, 0, 0, 91, 100, 5, 15,
+		0, 0, 92, 97, 3, 2, 1, 0, 93, 94, 5, 22, 0, 0, 94, 96, 3, 2, 1, 0, 95,
+		93, 1, 0, 0, 0, 96, 99, 1, 0, 0, 0, 97, 95, 1, 0, 0, 0, 97, 98, 1, 0, 0,
+		0, 98, 101, 1, 0, 0, 0, 99, 97, 1, 0, 0, 0, 100, 92, 1, 0, 0, 0, 100, 101,
+		1, 0, 0, 0, 101, 102, 1, 0, 0, 0, 102, 111, 5, 16, 0, 0, 103, 104, 10,
+		1, 0, 0, 104, 105, 5, 19, 0, 0, 105, 108, 3, 4, 2, 0, 106, 107, 5, 1, 0,
+		0, 107, 109, 3, 4, 2, 0, 108, 106, 1, 0, 0, 0, 108, 109, 1, 0, 0, 0, 109,
+		111, 1, 0, 0, 0, 110, 39, 1, 0, 0, 0, 110, 42, 1, 0, 0, 0, 110, 45, 1,
+		0, 0, 0, 110, 49, 1, 0, 0, 0, 110, 52, 1, 0, 0, 0, 110, 55, 1, 0, 0, 0,
+		110, 58, 1, 0, 0, 0, 110, 61, 1, 0, 0, 0, 110, 64, 1, 0, 0, 0, 110, 67,
+		1, 0, 0, 0, 110, 70, 1, 0, 0, 0, 110, 73, 1, 0, 0, 0, 110, 76, 1, 0, 0,
+		0, 110, 82, 1, 0, 0, 0, 110, 90, 1, 0, 0, 0, 110, 103, 1, 0, 0, 0, 111,
+		114, 1, 0, 0, 0, 112, 110, 1, 0, 0, 0, 112, 113, 1, 0, 0, 0, 113, 5, 1,
+		0, 0, 0, 114, 112, 1, 0, 0, 0, 115, 124, 5, 17, 0, 0, 116, 121, 3, 4, 2,
+		0, 117, 118, 5, 22, 0, 0, 118, 120, 3, 4, 2, 0, 119, 117, 1, 0, 0, 0, 120,
+		123, 1, 0, 0, 0, 121, 119, 1, 0, 0, 0, 121, 122, 1, 0, 0, 0, 122, 125,
+		1, 0, 0, 0, 123, 121, 1, 0, 0, 0, 124, 116, 1, 0, 0, 0, 124, 125, 1, 0,
+		0, 0, 125, 126, 1, 0, 0, 0, 126, 127, 5, 18, 0, 0, 127, 7, 1, 0, 0, 0,
+		128, 137, 5, 23, 0, 0, 129, 134, 3, 10, 5, 0, 130, 131, 5, 22, 0, 0, 131,
+		133, 3, 10, 5, 0, 132, 130, 1, 0, 0, 0, 133, 136, 1, 0, 0, 0, 134, 132,
+		1, 0, 0, 0, 134, 135, 1, 0, 0, 0, 135, 138, 1, 0, 0, 0, 136, 134, 1, 0,
+		0, 0, 137, 129, 1, 0, 0, 0, 137, 138, 1, 0, 0, 0, 138, 139, 1, 0, 0, 0,
+		139, 140, 5, 24, 0, 0, 140, 9, 1, 0, 0, 0, 141, 142, 3, 12, 6, 0, 142,
+		143, 5, 1, 0, 0, 143, 144, 3, 4, 2, 0, 144, 149, 1, 0, 0, 0, 145, 146,
+		5, 28, 0, 0, 146, 147, 5, 1, 0, 0, 147, 149, 3, 4, 2, 0, 148, 141, 1, 0,
+		0, 0, 148, 145, 1, 0, 0, 0, 149, 11, 1, 0, 0, 0, 150, 151, 5, 29, 0, 0,
+		151, 13, 1, 0, 0, 0, 152, 156, 3, 4, 2, 0, 153, 156, 5, 30, 0, 0, 154,
+		156, 5, 28, 0, 0, 155, 152, 1, 0, 0, 0, 155, 153, 1, 0, 0, 0, 155, 154,
+		1, 0, 0, 0, 156, 15, 1, 0, 0, 0, 14, 37, 78, 84, 97, 100, 108, 110, 112,
+		121, 124, 134, 137, 148, 155,
 	}
 	deserializer := antlr.NewATNDeserializer(nil)
 	staticData.atn = deserializer.Deserialize(staticData.serializedATN)
@@ -151,7 +152,7 @@ func NewSimpleQueryLanguageParser(input antlr.TokenStream) *SimpleQueryLanguageP
 	this.RuleNames = staticData.ruleNames
 	this.LiteralNames = staticData.literalNames
 	this.SymbolicNames = staticData.symbolicNames
-	this.GrammarFileName = "SimpleQueryLanguage.g4"
+	this.GrammarFileName = "java-escape"
 
 	return this
 }
@@ -160,37 +161,36 @@ func NewSimpleQueryLanguageParser(input antlr.TokenStream) *SimpleQueryLanguageP
 const (
 	SimpleQueryLanguageParserEOF            = antlr.TokenEOF
 	SimpleQueryLanguageParserT__0           = 1
-	SimpleQueryLanguageParserT__1           = 2
-	SimpleQueryLanguageParserLess           = 3
-	SimpleQueryLanguageParserLessOrEqual    = 4
-	SimpleQueryLanguageParserEqual          = 5
-	SimpleQueryLanguageParserGreater        = 6
-	SimpleQueryLanguageParserGreaterOrEqual = 7
-	SimpleQueryLanguageParserNotEqual       = 8
-	SimpleQueryLanguageParserAnd            = 9
-	SimpleQueryLanguageParserOr             = 10
-	SimpleQueryLanguageParserNot            = 11
-	SimpleQueryLanguageParserAdd            = 12
-	SimpleQueryLanguageParserSubtract       = 13
-	SimpleQueryLanguageParserMultiply       = 14
-	SimpleQueryLanguageParserDivide         = 15
-	SimpleQueryLanguageParserLeftParen      = 16
-	SimpleQueryLanguageParserRightParen     = 17
-	SimpleQueryLanguageParserLeftBracket    = 18
-	SimpleQueryLanguageParserRightBracket   = 19
-	SimpleQueryLanguageParserQuestion       = 20
-	SimpleQueryLanguageParserNullCoalescing = 21
-	SimpleQueryLanguageParserRange          = 22
-	SimpleQueryLanguageParserComma          = 23
-	SimpleQueryLanguageParserLeftBrace      = 24
-	SimpleQueryLanguageParserRightBrace     = 25
-	SimpleQueryLanguageParserNull           = 26
-	SimpleQueryLanguageParserFalse          = 27
-	SimpleQueryLanguageParserTrue           = 28
-	SimpleQueryLanguageParserESCAPED_STRING = 29
-	SimpleQueryLanguageParserSTRING         = 30
-	SimpleQueryLanguageParserNUMBER         = 31
-	SimpleQueryLanguageParserWS             = 32
+	SimpleQueryLanguageParserLess           = 2
+	SimpleQueryLanguageParserLessOrEqual    = 3
+	SimpleQueryLanguageParserEqual          = 4
+	SimpleQueryLanguageParserGreater        = 5
+	SimpleQueryLanguageParserGreaterOrEqual = 6
+	SimpleQueryLanguageParserNotEqual       = 7
+	SimpleQueryLanguageParserAnd            = 8
+	SimpleQueryLanguageParserOr             = 9
+	SimpleQueryLanguageParserNot            = 10
+	SimpleQueryLanguageParserAdd            = 11
+	SimpleQueryLanguageParserSubtract       = 12
+	SimpleQueryLanguageParserMultiply       = 13
+	SimpleQueryLanguageParserDivide         = 14
+	SimpleQueryLanguageParserLeftParen      = 15
+	SimpleQueryLanguageParserRightParen     = 16
+	SimpleQueryLanguageParserLeftBracket    = 17
+	SimpleQueryLanguageParserRightBracket   = 18
+	SimpleQueryLanguageParserQuestion       = 19
+	SimpleQueryLanguageParserNullCoalescing = 20
+	SimpleQueryLanguageParserDot            = 21
+	SimpleQueryLanguageParserComma          = 22
+	SimpleQueryLanguageParserLeftBrace      = 23
+	SimpleQueryLanguageParserRightBrace     = 24
+	SimpleQueryLanguageParserNull           = 25
+	SimpleQueryLanguageParserFalse          = 26
+	SimpleQueryLanguageParserTrue           = 27
+	SimpleQueryLanguageParserESCAPED_STRING = 28
+	SimpleQueryLanguageParserSTRING         = 29
+	SimpleQueryLanguageParserNUMBER         = 30
+	SimpleQueryLanguageParserWS             = 31
 )
 
 // SimpleQueryLanguageParser rules.
@@ -612,8 +612,12 @@ func (s *FieldContext) Add() antlr.TerminalNode {
 	return s.GetToken(SimpleQueryLanguageParserAdd, 0)
 }
 
-func (s *FieldContext) Range() antlr.TerminalNode {
-	return s.GetToken(SimpleQueryLanguageParserRange, 0)
+func (s *FieldContext) AllDot() []antlr.TerminalNode {
+	return s.GetTokens(SimpleQueryLanguageParserDot)
+}
+
+func (s *FieldContext) Dot(i int) antlr.TerminalNode {
+	return s.GetToken(SimpleQueryLanguageParserDot, i)
 }
 
 func (s *FieldContext) NullCoalescing() antlr.TerminalNode {
@@ -885,7 +889,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 		panic(antlr.NewNoViableAltException(p, nil, nil, nil, nil, nil))
 	}
 	p.GetParserRuleContext().SetStop(p.GetTokenStream().LT(-1))
-	p.SetState(111)
+	p.SetState(112)
 	p.GetErrorHandler().Sync(p)
 	_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 7, p.GetParserRuleContext())
 
@@ -895,7 +899,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.TriggerExitRuleEvent()
 			}
 			_prevctx = localctx
-			p.SetState(109)
+			p.SetState(110)
 			p.GetErrorHandler().Sync(p)
 			switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 6, p.GetParserRuleContext()) {
 			case 1:
@@ -956,300 +960,304 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(46)
-					p.Match(SimpleQueryLanguageParserRange)
+					p.Match(SimpleQueryLanguageParserDot)
 				}
 				{
 					p.SetState(47)
+					p.Match(SimpleQueryLanguageParserDot)
+				}
+				{
+					p.SetState(48)
 					p.field(13)
 				}
 
 			case 4:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(48)
+				p.SetState(49)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 11)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 11)", ""))
 				}
 				{
-					p.SetState(49)
+					p.SetState(50)
 					p.Match(SimpleQueryLanguageParserNullCoalescing)
 				}
 				{
-					p.SetState(50)
+					p.SetState(51)
 					p.field(12)
 				}
 
 			case 5:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(51)
+				p.SetState(52)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 10)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 10)", ""))
 				}
 				{
-					p.SetState(52)
+					p.SetState(53)
 					p.Match(SimpleQueryLanguageParserEqual)
 				}
 				{
-					p.SetState(53)
+					p.SetState(54)
 					p.field(11)
 				}
 
 			case 6:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(54)
+				p.SetState(55)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 9)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 9)", ""))
 				}
 				{
-					p.SetState(55)
+					p.SetState(56)
 					p.Match(SimpleQueryLanguageParserLess)
 				}
 				{
-					p.SetState(56)
+					p.SetState(57)
 					p.field(10)
 				}
 
 			case 7:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(57)
+				p.SetState(58)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 8)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 8)", ""))
 				}
 				{
-					p.SetState(58)
+					p.SetState(59)
 					p.Match(SimpleQueryLanguageParserLessOrEqual)
 				}
 				{
-					p.SetState(59)
+					p.SetState(60)
 					p.field(9)
 				}
 
 			case 8:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(60)
+				p.SetState(61)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 7)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 7)", ""))
 				}
 				{
-					p.SetState(61)
+					p.SetState(62)
 					p.Match(SimpleQueryLanguageParserGreater)
 				}
 				{
-					p.SetState(62)
+					p.SetState(63)
 					p.field(8)
 				}
 
 			case 9:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(63)
+				p.SetState(64)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 6)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 6)", ""))
 				}
 				{
-					p.SetState(64)
+					p.SetState(65)
 					p.Match(SimpleQueryLanguageParserGreaterOrEqual)
 				}
 				{
-					p.SetState(65)
+					p.SetState(66)
 					p.field(7)
 				}
 
 			case 10:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(66)
+				p.SetState(67)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 5)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 5)", ""))
 				}
 				{
-					p.SetState(67)
+					p.SetState(68)
 					p.Match(SimpleQueryLanguageParserNotEqual)
 				}
 				{
-					p.SetState(68)
+					p.SetState(69)
 					p.field(6)
 				}
 
 			case 11:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(69)
+				p.SetState(70)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 4)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 4)", ""))
 				}
 				{
-					p.SetState(70)
+					p.SetState(71)
 					p.Match(SimpleQueryLanguageParserAnd)
 				}
 				{
-					p.SetState(71)
+					p.SetState(72)
 					p.field(5)
 				}
 
 			case 12:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(72)
+				p.SetState(73)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 3)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 3)", ""))
 				}
 				{
-					p.SetState(73)
+					p.SetState(74)
 					p.Match(SimpleQueryLanguageParserOr)
 				}
 				{
-					p.SetState(74)
+					p.SetState(75)
 					p.field(4)
 				}
 
 			case 13:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(75)
+				p.SetState(76)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 18)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 18)", ""))
 				}
 
-				p.SetState(77)
+				p.SetState(78)
 				p.GetErrorHandler().Sync(p)
 				_la = p.GetTokenStream().LA(1)
 
 				if _la == SimpleQueryLanguageParserQuestion {
 					{
-						p.SetState(76)
+						p.SetState(77)
 						p.Match(SimpleQueryLanguageParserQuestion)
 					}
 
 				}
 				{
-					p.SetState(79)
-					p.Match(SimpleQueryLanguageParserT__0)
+					p.SetState(80)
+					p.Match(SimpleQueryLanguageParserDot)
 				}
 				{
-					p.SetState(80)
+					p.SetState(81)
 					p.Name()
 				}
 
 			case 14:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(81)
+				p.SetState(82)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 17)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 17)", ""))
 				}
 
-				p.SetState(83)
+				p.SetState(84)
 				p.GetErrorHandler().Sync(p)
 				_la = p.GetTokenStream().LA(1)
 
 				if _la == SimpleQueryLanguageParserQuestion {
 					{
-						p.SetState(82)
+						p.SetState(83)
 						p.Match(SimpleQueryLanguageParserQuestion)
 					}
 
 				}
 				{
-					p.SetState(85)
+					p.SetState(86)
 					p.Match(SimpleQueryLanguageParserLeftBracket)
 				}
 				{
-					p.SetState(86)
+					p.SetState(87)
 					p.Index()
 				}
 				{
-					p.SetState(87)
+					p.SetState(88)
 					p.Match(SimpleQueryLanguageParserRightBracket)
 				}
 
 			case 15:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(89)
+				p.SetState(90)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 16)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 16)", ""))
 				}
 				{
-					p.SetState(90)
+					p.SetState(91)
 					p.Match(SimpleQueryLanguageParserLeftParen)
 				}
-				p.SetState(99)
+				p.SetState(100)
 				p.GetErrorHandler().Sync(p)
 				_la = p.GetTokenStream().LA(1)
 
-				if ((_la)&-(0x1f+1)) == 0 && ((1<<uint(_la))&((1<<SimpleQueryLanguageParserNot)|(1<<SimpleQueryLanguageParserSubtract)|(1<<SimpleQueryLanguageParserLeftParen)|(1<<SimpleQueryLanguageParserLeftBracket)|(1<<SimpleQueryLanguageParserLeftBrace)|(1<<SimpleQueryLanguageParserNull)|(1<<SimpleQueryLanguageParserFalse)|(1<<SimpleQueryLanguageParserTrue)|(1<<SimpleQueryLanguageParserESCAPED_STRING)|(1<<SimpleQueryLanguageParserSTRING)|(1<<SimpleQueryLanguageParserNUMBER))) != 0 {
+				if (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&2122486784) != 0 {
 					{
-						p.SetState(91)
+						p.SetState(92)
 						p.Function_param()
 					}
-					p.SetState(96)
+					p.SetState(97)
 					p.GetErrorHandler().Sync(p)
 					_la = p.GetTokenStream().LA(1)
 
 					for _la == SimpleQueryLanguageParserComma {
 						{
-							p.SetState(92)
+							p.SetState(93)
 							p.Match(SimpleQueryLanguageParserComma)
 						}
 						{
-							p.SetState(93)
+							p.SetState(94)
 							p.Function_param()
 						}
 
-						p.SetState(98)
+						p.SetState(99)
 						p.GetErrorHandler().Sync(p)
 						_la = p.GetTokenStream().LA(1)
 					}
 
 				}
 				{
-					p.SetState(101)
+					p.SetState(102)
 					p.Match(SimpleQueryLanguageParserRightParen)
 				}
 
 			case 16:
 				localctx = NewFieldContext(p, _parentctx, _parentState)
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
-				p.SetState(102)
+				p.SetState(103)
 
 				if !(p.Precpred(p.GetParserRuleContext(), 1)) {
 					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 1)", ""))
 				}
 				{
-					p.SetState(103)
+					p.SetState(104)
 					p.Match(SimpleQueryLanguageParserQuestion)
 				}
 				{
-					p.SetState(104)
+					p.SetState(105)
 					p.field(0)
 				}
-				p.SetState(107)
+				p.SetState(108)
 				p.GetErrorHandler().Sync(p)
 
 				if p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 5, p.GetParserRuleContext()) == 1 {
 					{
-						p.SetState(105)
-						p.Match(SimpleQueryLanguageParserT__1)
+						p.SetState(106)
+						p.Match(SimpleQueryLanguageParserT__0)
 					}
 					{
-						p.SetState(106)
+						p.SetState(107)
 						p.field(0)
 					}
 
@@ -1258,7 +1266,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 			}
 
 		}
-		p.SetState(113)
+		p.SetState(114)
 		p.GetErrorHandler().Sync(p)
 		_alt = p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 7, p.GetParserRuleContext())
 	}
@@ -1417,40 +1425,40 @@ func (p *SimpleQueryLanguageParser) Array() (localctx IArrayContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(114)
+		p.SetState(115)
 		p.Match(SimpleQueryLanguageParserLeftBracket)
 	}
-	p.SetState(123)
+	p.SetState(124)
 	p.GetErrorHandler().Sync(p)
 	_la = p.GetTokenStream().LA(1)
 
-	if ((_la)&-(0x1f+1)) == 0 && ((1<<uint(_la))&((1<<SimpleQueryLanguageParserNot)|(1<<SimpleQueryLanguageParserSubtract)|(1<<SimpleQueryLanguageParserLeftParen)|(1<<SimpleQueryLanguageParserLeftBracket)|(1<<SimpleQueryLanguageParserLeftBrace)|(1<<SimpleQueryLanguageParserNull)|(1<<SimpleQueryLanguageParserFalse)|(1<<SimpleQueryLanguageParserTrue)|(1<<SimpleQueryLanguageParserESCAPED_STRING)|(1<<SimpleQueryLanguageParserSTRING)|(1<<SimpleQueryLanguageParserNUMBER))) != 0 {
+	if (int64(_la) & ^0x3f) == 0 && ((int64(1)<<_la)&2122486784) != 0 {
 		{
-			p.SetState(115)
+			p.SetState(116)
 			p.field(0)
 		}
-		p.SetState(120)
+		p.SetState(121)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 
 		for _la == SimpleQueryLanguageParserComma {
 			{
-				p.SetState(116)
+				p.SetState(117)
 				p.Match(SimpleQueryLanguageParserComma)
 			}
 			{
-				p.SetState(117)
+				p.SetState(118)
 				p.field(0)
 			}
 
-			p.SetState(122)
+			p.SetState(123)
 			p.GetErrorHandler().Sync(p)
 			_la = p.GetTokenStream().LA(1)
 		}
 
 	}
 	{
-		p.SetState(125)
+		p.SetState(126)
 		p.Match(SimpleQueryLanguageParserRightBracket)
 	}
 
@@ -1608,40 +1616,40 @@ func (p *SimpleQueryLanguageParser) Object() (localctx IObjectContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(127)
+		p.SetState(128)
 		p.Match(SimpleQueryLanguageParserLeftBrace)
 	}
-	p.SetState(136)
+	p.SetState(137)
 	p.GetErrorHandler().Sync(p)
 	_la = p.GetTokenStream().LA(1)
 
 	if _la == SimpleQueryLanguageParserESCAPED_STRING || _la == SimpleQueryLanguageParserSTRING {
 		{
-			p.SetState(128)
+			p.SetState(129)
 			p.Object_field()
 		}
-		p.SetState(133)
+		p.SetState(134)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 
 		for _la == SimpleQueryLanguageParserComma {
 			{
-				p.SetState(129)
+				p.SetState(130)
 				p.Match(SimpleQueryLanguageParserComma)
 			}
 			{
-				p.SetState(130)
+				p.SetState(131)
 				p.Object_field()
 			}
 
-			p.SetState(135)
+			p.SetState(136)
 			p.GetErrorHandler().Sync(p)
 			_la = p.GetTokenStream().LA(1)
 		}
 
 	}
 	{
-		p.SetState(138)
+		p.SetState(139)
 		p.Match(SimpleQueryLanguageParserRightBrace)
 	}
 
@@ -1775,37 +1783,37 @@ func (p *SimpleQueryLanguageParser) Object_field() (localctx IObject_fieldContex
 		}
 	}()
 
-	p.SetState(147)
+	p.SetState(148)
 	p.GetErrorHandler().Sync(p)
 
 	switch p.GetTokenStream().LA(1) {
 	case SimpleQueryLanguageParserSTRING:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(140)
+			p.SetState(141)
 			p.Name()
 		}
 		{
-			p.SetState(141)
-			p.Match(SimpleQueryLanguageParserT__1)
+			p.SetState(142)
+			p.Match(SimpleQueryLanguageParserT__0)
 		}
 		{
-			p.SetState(142)
+			p.SetState(143)
 			p.field(0)
 		}
 
 	case SimpleQueryLanguageParserESCAPED_STRING:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(144)
+			p.SetState(145)
 			p.Match(SimpleQueryLanguageParserESCAPED_STRING)
 		}
 		{
-			p.SetState(145)
-			p.Match(SimpleQueryLanguageParserT__1)
+			p.SetState(146)
+			p.Match(SimpleQueryLanguageParserT__0)
 		}
 		{
-			p.SetState(146)
+			p.SetState(147)
 			p.field(0)
 		}
 
@@ -1913,7 +1921,7 @@ func (p *SimpleQueryLanguageParser) Name() (localctx INameContext) {
 
 	p.EnterOuterAlt(localctx, 1)
 	{
-		p.SetState(149)
+		p.SetState(150)
 		p.Match(SimpleQueryLanguageParserSTRING)
 	}
 
@@ -2035,27 +2043,27 @@ func (p *SimpleQueryLanguageParser) Index() (localctx IIndexContext) {
 		}
 	}()
 
-	p.SetState(154)
+	p.SetState(155)
 	p.GetErrorHandler().Sync(p)
 	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 13, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(151)
+			p.SetState(152)
 			p.field(0)
 		}
 
 	case 2:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(152)
+			p.SetState(153)
 			p.Match(SimpleQueryLanguageParserNUMBER)
 		}
 
 	case 3:
 		p.EnterOuterAlt(localctx, 3)
 		{
-			p.SetState(153)
+			p.SetState(154)
 			p.Match(SimpleQueryLanguageParserESCAPED_STRING)
 		}
 

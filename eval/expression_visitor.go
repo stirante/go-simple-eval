@@ -2,7 +2,7 @@ package eval
 
 import (
 	"github.com/Bedrock-OSS/go-burrito/burrito"
-	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/antlr/antlr4/runtime/Go/antlr/v4"
 	"github.com/gammazero/deque"
 	"github.com/stirante/go-simple-eval/eval/functions"
 	"github.com/stirante/go-simple-eval/eval/utils"
@@ -226,7 +226,7 @@ func (v *ExpressionVisitor) VisitField(context *parser.FieldContext) interface{}
 		} else if utils.IsNumber(f1) && utils.IsNumber(f2) {
 			n1 := utils.ToNumber(f1)
 			n2 := utils.ToNumber(f2)
-			if context.Range() != nil {
+			if len(context.AllDot()) == 2 {
 				return utils.CreateRange(n1.IntValue(), n2.IntValue())
 			} else if context.Greater() != nil {
 				return n1.FloatValue() > n2.FloatValue()

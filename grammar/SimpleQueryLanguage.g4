@@ -24,7 +24,7 @@ RightBracket: ']';
 Question: '?';
 NullCoalescing: '??';
 
-Range: '..';
+Dot: '.';
 Comma: ',';
 
 LeftBrace: '{';
@@ -52,13 +52,13 @@ field
    | array
    | object
    | name
-   | field (Question? '.' name)
+   | field (Question? Dot name)
    | field (Question? LeftBracket index RightBracket)
    | field LeftParen (function_param (Comma function_param)*)? RightParen
    | Subtract field
    | field (Divide | Multiply) field
    | field (Add | Subtract) field
-   | field Range field
+   | field Dot Dot field
    | field NullCoalescing field
    | field Equal field
    | field Less field
@@ -102,7 +102,7 @@ STRING
    ;
 
 NUMBER
-   : [0-9]+('.'[0-9]+)?
+   : [0-9]+(Dot[0-9]+)?
    ;
 
 WS
