@@ -56,6 +56,7 @@ field
    | field (Question? LeftBracket index RightBracket)
    | field LeftParen (function_param (Comma function_param)*)? RightParen
    | Subtract field
+   | Not field
    | field (Divide | Multiply) field
    | field (Add | Subtract) field
    | field Dot Dot field
@@ -68,7 +69,6 @@ field
    | field NotEqual field
    | field And field
    | field Or field
-   | Not field
    | field Question field (':' field)?
    ;
 

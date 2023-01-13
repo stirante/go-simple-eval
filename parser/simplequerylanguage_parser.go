@@ -73,21 +73,21 @@ func simplequerylanguageParserInit() {
 		0, 0, 24, 38, 1, 0, 0, 0, 25, 38, 5, 27, 0, 0, 26, 38, 5, 26, 0, 0, 27,
 		38, 5, 25, 0, 0, 28, 38, 5, 30, 0, 0, 29, 38, 5, 28, 0, 0, 30, 38, 3, 6,
 		3, 0, 31, 38, 3, 8, 4, 0, 32, 38, 3, 12, 6, 0, 33, 34, 5, 12, 0, 0, 34,
-		38, 3, 4, 2, 15, 35, 36, 5, 10, 0, 0, 36, 38, 3, 4, 2, 2, 37, 20, 1, 0,
+		38, 3, 4, 2, 15, 35, 36, 5, 10, 0, 0, 36, 38, 3, 4, 2, 14, 37, 20, 1, 0,
 		0, 0, 37, 25, 1, 0, 0, 0, 37, 26, 1, 0, 0, 0, 37, 27, 1, 0, 0, 0, 37, 28,
 		1, 0, 0, 0, 37, 29, 1, 0, 0, 0, 37, 30, 1, 0, 0, 0, 37, 31, 1, 0, 0, 0,
 		37, 32, 1, 0, 0, 0, 37, 33, 1, 0, 0, 0, 37, 35, 1, 0, 0, 0, 38, 112, 1,
-		0, 0, 0, 39, 40, 10, 14, 0, 0, 40, 41, 7, 0, 0, 0, 41, 111, 3, 4, 2, 15,
-		42, 43, 10, 13, 0, 0, 43, 44, 7, 1, 0, 0, 44, 111, 3, 4, 2, 14, 45, 46,
-		10, 12, 0, 0, 46, 47, 5, 21, 0, 0, 47, 48, 5, 21, 0, 0, 48, 111, 3, 4,
-		2, 13, 49, 50, 10, 11, 0, 0, 50, 51, 5, 20, 0, 0, 51, 111, 3, 4, 2, 12,
-		52, 53, 10, 10, 0, 0, 53, 54, 5, 4, 0, 0, 54, 111, 3, 4, 2, 11, 55, 56,
-		10, 9, 0, 0, 56, 57, 5, 2, 0, 0, 57, 111, 3, 4, 2, 10, 58, 59, 10, 8, 0,
-		0, 59, 60, 5, 3, 0, 0, 60, 111, 3, 4, 2, 9, 61, 62, 10, 7, 0, 0, 62, 63,
-		5, 5, 0, 0, 63, 111, 3, 4, 2, 8, 64, 65, 10, 6, 0, 0, 65, 66, 5, 6, 0,
-		0, 66, 111, 3, 4, 2, 7, 67, 68, 10, 5, 0, 0, 68, 69, 5, 7, 0, 0, 69, 111,
-		3, 4, 2, 6, 70, 71, 10, 4, 0, 0, 71, 72, 5, 8, 0, 0, 72, 111, 3, 4, 2,
-		5, 73, 74, 10, 3, 0, 0, 74, 75, 5, 9, 0, 0, 75, 111, 3, 4, 2, 4, 76, 78,
+		0, 0, 0, 39, 40, 10, 13, 0, 0, 40, 41, 7, 0, 0, 0, 41, 111, 3, 4, 2, 14,
+		42, 43, 10, 12, 0, 0, 43, 44, 7, 1, 0, 0, 44, 111, 3, 4, 2, 13, 45, 46,
+		10, 11, 0, 0, 46, 47, 5, 21, 0, 0, 47, 48, 5, 21, 0, 0, 48, 111, 3, 4,
+		2, 12, 49, 50, 10, 10, 0, 0, 50, 51, 5, 20, 0, 0, 51, 111, 3, 4, 2, 11,
+		52, 53, 10, 9, 0, 0, 53, 54, 5, 4, 0, 0, 54, 111, 3, 4, 2, 10, 55, 56,
+		10, 8, 0, 0, 56, 57, 5, 2, 0, 0, 57, 111, 3, 4, 2, 9, 58, 59, 10, 7, 0,
+		0, 59, 60, 5, 3, 0, 0, 60, 111, 3, 4, 2, 8, 61, 62, 10, 6, 0, 0, 62, 63,
+		5, 5, 0, 0, 63, 111, 3, 4, 2, 7, 64, 65, 10, 5, 0, 0, 65, 66, 5, 6, 0,
+		0, 66, 111, 3, 4, 2, 6, 67, 68, 10, 4, 0, 0, 68, 69, 5, 7, 0, 0, 69, 111,
+		3, 4, 2, 5, 70, 71, 10, 3, 0, 0, 71, 72, 5, 8, 0, 0, 72, 111, 3, 4, 2,
+		4, 73, 74, 10, 2, 0, 0, 74, 75, 5, 9, 0, 0, 75, 111, 3, 4, 2, 3, 76, 78,
 		10, 18, 0, 0, 77, 79, 5, 19, 0, 0, 78, 77, 1, 0, 0, 0, 78, 79, 1, 0, 0,
 		0, 79, 80, 1, 0, 0, 0, 80, 81, 5, 21, 0, 0, 81, 111, 3, 12, 6, 0, 82, 84,
 		10, 17, 0, 0, 83, 85, 5, 19, 0, 0, 84, 83, 1, 0, 0, 0, 84, 85, 1, 0, 0,
@@ -882,7 +882,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 		}
 		{
 			p.SetState(36)
-			p.field(2)
+			p.field(14)
 		}
 
 	default:
@@ -907,8 +907,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(39)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 14)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 14)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 13)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 13)", ""))
 				}
 				{
 					p.SetState(40)
@@ -923,7 +923,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(41)
-					p.field(15)
+					p.field(14)
 				}
 
 			case 2:
@@ -931,8 +931,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(42)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 13)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 13)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 12)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 12)", ""))
 				}
 				{
 					p.SetState(43)
@@ -947,7 +947,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(44)
-					p.field(14)
+					p.field(13)
 				}
 
 			case 3:
@@ -955,8 +955,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(45)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 12)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 12)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 11)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 11)", ""))
 				}
 				{
 					p.SetState(46)
@@ -968,7 +968,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(48)
-					p.field(13)
+					p.field(12)
 				}
 
 			case 4:
@@ -976,8 +976,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(49)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 11)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 11)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 10)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 10)", ""))
 				}
 				{
 					p.SetState(50)
@@ -985,7 +985,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(51)
-					p.field(12)
+					p.field(11)
 				}
 
 			case 5:
@@ -993,8 +993,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(52)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 10)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 10)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 9)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 9)", ""))
 				}
 				{
 					p.SetState(53)
@@ -1002,7 +1002,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(54)
-					p.field(11)
+					p.field(10)
 				}
 
 			case 6:
@@ -1010,8 +1010,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(55)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 9)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 9)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 8)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 8)", ""))
 				}
 				{
 					p.SetState(56)
@@ -1019,7 +1019,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(57)
-					p.field(10)
+					p.field(9)
 				}
 
 			case 7:
@@ -1027,8 +1027,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(58)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 8)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 8)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 7)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 7)", ""))
 				}
 				{
 					p.SetState(59)
@@ -1036,7 +1036,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(60)
-					p.field(9)
+					p.field(8)
 				}
 
 			case 8:
@@ -1044,8 +1044,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(61)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 7)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 7)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 6)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 6)", ""))
 				}
 				{
 					p.SetState(62)
@@ -1053,7 +1053,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(63)
-					p.field(8)
+					p.field(7)
 				}
 
 			case 9:
@@ -1061,8 +1061,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(64)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 6)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 6)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 5)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 5)", ""))
 				}
 				{
 					p.SetState(65)
@@ -1070,7 +1070,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(66)
-					p.field(7)
+					p.field(6)
 				}
 
 			case 10:
@@ -1078,8 +1078,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(67)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 5)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 5)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 4)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 4)", ""))
 				}
 				{
 					p.SetState(68)
@@ -1087,7 +1087,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(69)
-					p.field(6)
+					p.field(5)
 				}
 
 			case 11:
@@ -1095,8 +1095,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(70)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 4)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 4)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 3)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 3)", ""))
 				}
 				{
 					p.SetState(71)
@@ -1104,7 +1104,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(72)
-					p.field(5)
+					p.field(4)
 				}
 
 			case 12:
@@ -1112,8 +1112,8 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				p.PushNewRecursionContext(localctx, _startState, SimpleQueryLanguageParserRULE_field)
 				p.SetState(73)
 
-				if !(p.Precpred(p.GetParserRuleContext(), 3)) {
-					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 3)", ""))
+				if !(p.Precpred(p.GetParserRuleContext(), 2)) {
+					panic(antlr.NewFailedPredicateException(p, "p.Precpred(p.GetParserRuleContext(), 2)", ""))
 				}
 				{
 					p.SetState(74)
@@ -1121,7 +1121,7 @@ func (p *SimpleQueryLanguageParser) field(_p int) (localctx IFieldContext) {
 				}
 				{
 					p.SetState(75)
-					p.field(4)
+					p.field(3)
 				}
 
 			case 13:
@@ -2092,40 +2092,40 @@ func (p *SimpleQueryLanguageParser) Field_Sempred(localctx antlr.RuleContext, pr
 
 	switch predIndex {
 	case 0:
-		return p.Precpred(p.GetParserRuleContext(), 14)
-
-	case 1:
 		return p.Precpred(p.GetParserRuleContext(), 13)
 
-	case 2:
+	case 1:
 		return p.Precpred(p.GetParserRuleContext(), 12)
 
-	case 3:
+	case 2:
 		return p.Precpred(p.GetParserRuleContext(), 11)
 
-	case 4:
+	case 3:
 		return p.Precpred(p.GetParserRuleContext(), 10)
 
-	case 5:
+	case 4:
 		return p.Precpred(p.GetParserRuleContext(), 9)
 
-	case 6:
+	case 5:
 		return p.Precpred(p.GetParserRuleContext(), 8)
 
-	case 7:
+	case 6:
 		return p.Precpred(p.GetParserRuleContext(), 7)
 
-	case 8:
+	case 7:
 		return p.Precpred(p.GetParserRuleContext(), 6)
 
-	case 9:
+	case 8:
 		return p.Precpred(p.GetParserRuleContext(), 5)
 
-	case 10:
+	case 9:
 		return p.Precpred(p.GetParserRuleContext(), 4)
 
-	case 11:
+	case 10:
 		return p.Precpred(p.GetParserRuleContext(), 3)
+
+	case 11:
+		return p.Precpred(p.GetParserRuleContext(), 2)
 
 	case 12:
 		return p.Precpred(p.GetParserRuleContext(), 18)
