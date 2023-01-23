@@ -226,7 +226,7 @@ func ToString(obj interface{}) string {
 	if b, ok := obj.(string); ok {
 		return b
 	}
-	str, err := json.Marshal(UnwrapContainers(obj))
+	str, err := json.Marshal(UnwrapContainers(DeepCopyObject(obj.(map[string]interface{}))))
 	if err != nil {
 		return "null"
 	}
@@ -515,16 +515,18 @@ func UnwrapContainers(obj interface{}) interface{} {
 		return obj.(Semver).String()
 	} else if IsObject(obj) {
 		object := AsObject(obj)
-		for k, _ := range object {
-			object[k] = UnwrapContainers(object[k])
+		c := map[string]interface{}{}
+		for k := range object {
+			c[k] = UnwrapContainers(object[k])
 		}
-		return object
+		return c
 	} else if IsArray(obj) {
 		array := AsArray(obj)
+		c := make([]interface{}, len(array))
 		for k, v := range array {
-			array[k] = UnwrapContainers(v)
+			c[k] = UnwrapContainers(v)
 		}
-		return array
+		return c
 	}
 	return obj
 }
