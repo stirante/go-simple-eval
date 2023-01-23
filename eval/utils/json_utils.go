@@ -226,7 +226,7 @@ func ToString(obj interface{}) string {
 	if b, ok := obj.(string); ok {
 		return b
 	}
-	str, err := json.Marshal(UnwrapContainers(DeepCopyObject(obj.(map[string]interface{}))))
+	str, err := json.Marshal(UnwrapContainers(obj))
 	if err != nil {
 		return "null"
 	}
