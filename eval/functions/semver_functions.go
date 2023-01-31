@@ -17,6 +17,10 @@ func RegisterSemverFunctions() {
 		Name: "semver",
 		Body: semver,
 	})
+	RegisterFunction(JsonFunction{
+		Name: "semver",
+		Body: semverSemver,
+	})
 }
 
 func semverString(str string) (utils.Semver, error) {
@@ -25,6 +29,10 @@ func semverString(str string) (utils.Semver, error) {
 
 func semverArray(arr []interface{}) (utils.Semver, error) {
 	return utils.ParseSemverArray(arr)
+}
+
+func semverSemver(ver utils.Semver) utils.Semver {
+	return ver
 }
 
 func semver(major, minor, patch utils.JsonNumber) (utils.Semver, error) {

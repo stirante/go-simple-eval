@@ -172,6 +172,9 @@ func typeToString(t reflect.Type) string {
 	if t.AssignableTo(reflect.TypeOf(utils.JsonNumber{})) {
 		return "number"
 	}
+	if t.AssignableTo(reflect.TypeOf(utils.Semver{})) {
+		return "semver"
+	}
 	switch t.Kind() {
 	case reflect.Bool:
 		return "boolean"

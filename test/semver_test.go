@@ -58,3 +58,8 @@ func TestSemverAccessors(t *testing.T) {
 	eval := evaluate(t, `semver('1.8.0').major`)
 	assertNumber(t, eval, 1)
 }
+
+func TestSemverTwice(t *testing.T) {
+	eval := evaluate(t, `semver(semver('1.8.0'))`)
+	assertString(t, eval, "1.8.0")
+}
